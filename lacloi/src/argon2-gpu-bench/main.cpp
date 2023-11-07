@@ -110,7 +110,7 @@ void read_difficulty_periodically(const std::string& filename) {
             }
             file.close(); 
         } else {
-            std::cerr << "The local difficult.txt file was not recognized" << std::endl;
+            std::cerr << "The local diff.txt file was not recognized" << std::endl;
         }
         
         // sleep for 3 seconds
@@ -271,7 +271,7 @@ int main(int, const char * const *argv)
         }
         file.close();
     } else {
-        std::cerr << "The local difficult.txt file was not recognized" << std::endl;
+        std::cerr << "The local diff.txt file was not recognized" << std::endl;
     }
     // start a thread to read difficulty from file
     std::thread t(read_difficulty_periodically, "difficulty.txt"); 
