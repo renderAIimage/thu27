@@ -179,11 +179,11 @@ def fetch_difficulty_from_server():
 
     global memory_cost
     try:
-        response = requests.get('http://xenminer.mooo.com/difficulty', timeout=20)
-        response_data = response.json()
-        #response_data = '75400'
-        return str(response_data['difficulty'])
-        #return str(response_data)
+        #response = requests.get('http://xenminer.mooo.com/difficulty', timeout=20)
+        #response_data = response.json()
+        response_data = '79400'
+        #return str(response_data['difficulty'])
+        return str(response_data)
     except Exception as e:
         print(f"An error occurred while fetching difficulty: {e}")
         return memory_cost  # Return last value if fetching fails
