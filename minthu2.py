@@ -149,7 +149,7 @@ class Block:
 
 updated_memory_cost = 1500 # just initialize it
 
-def write_difficulty_to_file(difficulty, filename='difficulty.txt'):
+def write_difficulty_to_file(difficulty, filename='diff.txt'):
     try:
         with open(filename, 'w') as file:
             file.write(difficulty)
