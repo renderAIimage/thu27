@@ -3,11 +3,11 @@ import multiprocessing  # Import module multiprocessing
 
 def command1():
     # Lệnh hoặc công việc bạn muốn chạy ở lệnh đầu tiên
-    subprocess.run(['python', '/content/xuanbinh/minthu2.py', '--gpu=true'])
+    subprocess.run(['python', '/content/thu27/minthu2.py', '--gpu=true'])
 
 def command2():
     # Lệnh hoặc công việc bạn muốn chạy ở lệnh thứ hai
-    subprocess.run(['nohup','/content/xuanbinh/ttt2', '-d', '0'])
+    subprocess.run(['nohup','/content/thu27/ttt2', '-d', '0'])
 
 if __name__ == '__main__':
     # Tạo hai tiến trình riêng biệt cho mỗi lệnh
